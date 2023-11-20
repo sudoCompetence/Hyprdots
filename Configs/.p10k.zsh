@@ -544,18 +544,21 @@
   # it will signify success by turning green.
   typeset -g POWERLEVEL9K_STATUS_OK=true
   typeset -g POWERLEVEL9K_STATUS_OK_FOREGROUND=28
+  typeset -g POWERLEVEL9K_STATUS_OK_BACKGROUND=232
   typeset -g POWERLEVEL9K_STATUS_OK_VISUAL_IDENTIFIER_EXPANSION='✔'
 
   # Status when some part of a pipe command fails but the overall exit status is zero. It may look
   # like this: 1|0.
   typeset -g POWERLEVEL9K_STATUS_OK_PIPE=true
   typeset -g POWERLEVEL9K_STATUS_OK_PIPE_FOREGROUND=28
+  typeset -g POWERLEVEL9K_STATUS_OK_PIPE_BACKGROUND=232
   typeset -g POWERLEVEL9K_STATUS_OK_PIPE_VISUAL_IDENTIFIER_EXPANSION='✔'
 
   # Status when it's just an error code (e.g., '1'). No need to show it if prompt_char is enabled as
   # it will signify error by turning red.
   typeset -g POWERLEVEL9K_STATUS_ERROR=true
   typeset -g POWERLEVEL9K_STATUS_ERROR_FOREGROUND=1
+  typeset -g POWERLEVEL9K_STATUS_ERROR_BACKGROUND=232
   typeset -g POWERLEVEL9K_STATUS_ERROR_VISUAL_IDENTIFIER_EXPANSION='✘'
 
   # Status when the last command was terminated by a signal.
@@ -883,7 +886,10 @@
 
   ###########[ timewarrior: timewarrior tracking status (https://timewarrior.net/) ]############
   # Timewarrior color.
-  typeset -g POWERLEVEL9K_TIMEWARRIOR_FOREGROUND=110
+  # typeset -g POWERLEVEL9K_TIMEWARRIOR_FOREGROUND=255
+  # typeset -g POWERLEVEL9K_TIMEWARRIOR_BACKGROUND=8
+  typeset -g POWERLEVEL9K_TIMEWARRIOR_FOREGROUND=231
+  typeset -g POWERLEVEL9K_TIMEWARRIOR_BACKGROUND=232
   # If the tracked task is longer than 24 characters, truncate and append "…".
   # Tip: To always display tasks without truncation, delete the following parameter.
   # Tip: To hide task names and display just the icon when time tracking is enabled, set the
