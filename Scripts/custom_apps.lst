@@ -13,6 +13,7 @@ github-cli
 lazygit
 neovim
 tmux
+unzip
 grep
 curl
 tldr
@@ -26,3 +27,5 @@ lib32-glibc
 npm
 nodejs
 texlive-basic
+ttf-nerd-fonts-symbols
+ttf-nerd-fonts-symbols-common
