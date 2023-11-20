@@ -17,6 +17,7 @@ grep
 curl
 tldr
 thefuck
+unimatrix
 # Programming packages
 gcc
 clang
