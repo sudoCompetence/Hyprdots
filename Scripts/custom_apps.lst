@@ -1,10 +1,29 @@
-#neovim
-#emote
-#trash-cli-git
+# Custom Packages
 downgrade
-steam
 gamemode
-#gamescope
-#mangohud
+vivaldi
+okular
 spotify
 spicetify-cli
+# CLI Tools
+htop
+trash-cli-git
+github-cli
+lazygit
+neovim
+tmux
+unzip
+grep
+curl
+tldr
+thefuck
+# Programming packages
+gcc
+clang
+glibc
+lib32-glibc
+npm
+nodejs
+texlive-basic
+ttf-nerd-fonts-symbols
+ttf-nerd-fonts-symbols-common
