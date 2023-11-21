@@ -6,6 +6,7 @@ okular
 spotify
 spicetify-cli
 # CLI Tools
+os-prober
 htop
 trash-cli-git
 github-cli

@@ -104,7 +104,7 @@ alias nvimf='nvim $(fzf)'
 alias sql='sqlite3'
 
 alias neo='gif;cl;neofetch'
-alias matrix='unimatrix -a -c red -f -n -l o -s 96'
+# alias matrix='unimatrix -a -c red -f -n -l o -s 96'
 alias top='btop'
 alias gif='kitten icat --align center ~/.config/neofetch/arch-waifu-small.jpg'
 
@@ -120,11 +120,13 @@ alias tmuxqs='pkill -f tmux'
 if [[ -z "$TMUX" && -z "$(tmux list-sessions 2>/dev/null)" ]]; then
     # If tmux is not running and no sessions exist, start a new session
     # tmux new-session -s Master
-    tmux new-session -s Master \; send-keys "unimatrix -a -c red -f -n -l o -s 96; neo" Enter
+    # tmux new-session -s Master \; send-keys "unimatrix -a -c red -f -n -l o -s 96; neo" Enter
+    tmux new-session -s Master
 elif [[ -z "$TMUX" && -n "$(tmux list-sessions 2>/dev/null)" ]]; then
     # If tmux is not running but sessions exist, attach to the first session
     # tmux attach-session -t Master
-    tmux attach-session -t Master \; send-keys "unimatrix -a -c red -f -n -l o -s 96; neo" Enter
+    # tmux attach-session -t Master \; send-keys "unimatrix -a -c red -f -n -l o -s 96; neo" Enter
+    tmux new-session -t Master
 fi
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
